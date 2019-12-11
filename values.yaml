@@ -8,7 +8,7 @@ issuerName: letsencrypt
 
 # the email to send to the acme api
 email: example@example.com
-acmeServer: https://acme-staging-v02.api.letsencrypt.org/directory
+acmeServer: https://acme-v02.api.letsencrypt.org/directory
 
 # The project container the gcp managed zone
 project:
