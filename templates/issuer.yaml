@@ -1,0 +1,17 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: {{ .Values.kind }}
+metadata:
+  name: {{ .Values.issuerName }}
+spec:
+  acme:
+    email: {{ .Values.email }}
+    server: {{ .Values.acmeServer }}
+    privateKeySecretRef:
+      name: {{ .Values.issuerName }}-key
+    solvers:
+    - dns01:
+        clouddns:
+          project: {{ .Values.project }}
+          serviceAccountSecretRef:
+            name: {{ .Values.secret }}
+            key: {{ .Values.secretKey }}

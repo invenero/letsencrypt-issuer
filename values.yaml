@@ -1,0 +1,19 @@
+# When installing certmanager set ingressShim.defaultIssuerName and ingressShim.defaultIssuerKind to the values below
+
+# kind of issuer either Issuer (namespace specific) or ClusterIssuer (all namespaces)
+kind: ClusterIssuer
+
+# the name of the issuer used by ingress annotations and certificate objects
+issuerName: letsencrypt
+
+# the email to send to the acme api
+email: example@example.com
+acmeServer: https://acme-staging-v02.api.letsencrypt.org/directory
+
+# The project container the gcp managed zone
+project:
+
+# the name of the secret containing the service account key
+secret:
+# the key in the secret containing the credentials file
+secretKey:
