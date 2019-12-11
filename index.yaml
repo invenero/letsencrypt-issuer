@@ -3,6 +3,15 @@ entries:
   letsencrypt-issuer:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2019-12-11T15:17:48.422675-06:00"
+    description: A Helm chart to create a dns challenge letsencrypt CA issuer
+    digest: 0dae3a6912cf1db60ec24a554956f26b04999ae96b17caae740c55ea68eaa978
+    name: letsencrypt-issuer
+    urls:
+    - https://github.com/Harrison-Miller/letsencrypt-issuer/releases/download/letsencrypt-issuer-0.2.0/letsencrypt-issuer-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2019-12-11T14:01:17.896909-06:00"
     description: A Helm chart to create a dns challenge letsencrypt CA issuer
     digest: 4bca03a19960e1263661dfa8af36b4329e6150084db991fe38c6ababe17ceada
